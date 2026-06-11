@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -7,6 +8,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavBar({links}) {
 
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+
   const isActive = (href) => {
     return window.location.pathname === href;
   };
@@ -15,7 +19,7 @@ function NavBar({links}) {
     backgroundColor: '#202A44',
     color: 'black',
     fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   }
 
   return (
@@ -25,7 +29,7 @@ function NavBar({links}) {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
+            className="ms-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
@@ -34,6 +38,9 @@ function NavBar({links}) {
                     key={index}
                     href={link.href}
                     active={isActive(link.href)}
+                    onMouseEnter={() => setHoveredIndex(index)}
+                    onMouseLeave={() => setHoveredIndex(null)}
+                    style={{color: hoveredIndex === index ? 'white' : '#60E1CB'}}
                 >
                     {link.text}
                 </Nav.Link>
@@ -50,15 +57,6 @@ function NavBar({links}) {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
