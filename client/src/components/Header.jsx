@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import HeaderBody from "./HeaderBody";
+import HeaderServices from "./HeaderServices";
 
 function Header() {
     const links = [
@@ -21,6 +22,7 @@ function Header() {
         <>
         <NavBar links={links}/>
         <HeaderBody />
+        <HeaderServices />
         </>
     );
 }
