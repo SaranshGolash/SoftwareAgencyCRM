@@ -1,5 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
+import HeaderBody from "./HeaderBody";
+
 function Header() {
     const links = [
         {
@@ -18,6 +20,7 @@ function Header() {
     return (
         <>
         <NavBar links={links}/>
+        <HeaderBody />
         </>
     );
 }
