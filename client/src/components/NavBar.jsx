@@ -6,15 +6,22 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavBar({links}) {
-  
+
   const isActive = (href) => {
     return window.location.pathname === href;
   };
 
+  const navBar = {
+    backgroundColor: '#202A44',
+    color: 'black',
+    fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+  }
+
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" style={navBar}>
       <Container fluid>
-        <Navbar.Brand href="#">Codedex Solutions</Navbar.Brand>
+        <Navbar.Brand href="#" style={{color:'#f3ef0cff',  fontSize:'24px'}}>Codedex Solutions</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
