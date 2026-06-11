@@ -21,8 +21,10 @@ function Header() {
     return (
         <>
         <NavBar links={links}/>
-        <HeaderBody />
-        <HeaderServices />
+        <div style={{display:'flex', flexDirection:'column', gap:'100px'}}>
+            <HeaderBody />
+            <HeaderServices />
+        </div>
         </>
     );
 }

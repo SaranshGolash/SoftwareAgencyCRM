@@ -58,7 +58,7 @@ function HeaderServices() {
             <div className="services body" style={HeaderStyle}>
                 <h1 style={headerBodyStyle}>Our <span style={{color:"#60E1CB"}}>Services</span></h1>
                 <span style={{color:'#FFFFFF'}}>We provide the most affordable services</span>
-                <div className="services-card" style={{display: 'flex', justifyContent: 'flex-start', flexFlow: 'row nowrap', gap: '20px'}}>
+                <div className="services-card" style={{display: 'flex', justifyContent: 'flex-start', flexFlow: 'row nowrap', gap: '20px', marginTop:"60px"}}>
                     <ServiceCard 
                     serviceName={"Website Development"}
                     serviceDescription={"We build stunning, user-friendly, and responsive websites that stand out from the competition."}
