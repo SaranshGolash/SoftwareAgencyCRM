@@ -9,7 +9,10 @@ const btnStyle = {
     margin: 'none',
     background: 'none',
     cursor: 'pointer',
-    fontSize: '14px'
+    fontSize: '14px',
+    position: 'absolute',
+    bottom: '5px',
+    left: '15px',
 }
 
 function ServiceCard({serviceName, serviceDescription, serviceImage, serviceId, serviceCardStyle}) {
@@ -58,7 +61,7 @@ function HeaderServices() {
             <div className="services body" style={HeaderStyle}>
                 <h1 style={headerBodyStyle}>Our <span style={{color:"#60E1CB"}}>Services</span></h1>
                 <span style={{color:'#FFFFFF'}}>We provide the most affordable services</span>
-                <div className="services-card" style={{display: 'flex', justifyContent: 'flex-start', flexFlow: 'row nowrap', gap: '20px', marginTop:"60px"}}>
+                <div className="services-card" style={{display: 'flex', justifyContent: 'center', flexFlow: 'row wrap', gap: '20px', marginTop:"60px", maxWidth: '950px'}}>
                     <ServiceCard 
                     serviceName={"Website Development"}
                     serviceDescription={"Building stunning, user-friendly, and responsive websites that stand out from the competition."}
