@@ -3,10 +3,10 @@ import Card from 'react-bootstrap/Card';
 
 const btnStyle = {
     color: "#60E1CB",
+    background: 'none',
     TextDecoration: 'none',
     border: 'none',
     margin: 'none',
-    background: 'none',
     cursor: 'pointer',
     fontSize: '14px',
     position: 'absolute',
@@ -52,7 +52,7 @@ function HeaderServices() {
         alignItems: 'start',
         flexFlow: 'column nowrap',
         gap: '5px',
-        width: '18rem'
+        width: '18rem',
     }
 
     return (
