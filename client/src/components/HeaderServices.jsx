@@ -61,23 +61,44 @@ function HeaderServices() {
                 <div className="services-card" style={{display: 'flex', justifyContent: 'flex-start', flexFlow: 'row nowrap', gap: '20px', marginTop:"60px"}}>
                     <ServiceCard 
                     serviceName={"Website Development"}
-                    serviceDescription={"We build stunning, user-friendly, and responsive websites that stand out from the competition."}
+                    serviceDescription={"Building stunning, user-friendly, and responsive websites that stand out from the competition."}
                     serviceImage={"/images/Web.png"}
                     serviceId={"1"}
                     serviceCardStyle={serviceCardStyle}
                     />
                     <ServiceCard 
                     serviceName={"Mobile App Development"}
-                    serviceDescription={"We build stunning, user-friendly, and responsive websites that stand out from the competition."}
+                    serviceDescription={"Creating high-performing and scalable mobile applications for iOS and Android platforms tailored to your business needs."}
                     serviceImage={"/images/Mobile.png"}
                     serviceId={"2"}
                     serviceCardStyle={serviceCardStyle}
                     />
                     <ServiceCard 
                     serviceName={"AI Automation and Integration"}
-                    serviceDescription={"We build stunning, user-friendly, and responsive websites that stand out from the competition."}
+                    serviceDescription={"Leveraging artificial intelligence to streamline your business operations, enhance productivity, and unlock new growth opportunities."}
                     serviceImage={"/images/AI.png"}
                     serviceId={"3"}
+                    serviceCardStyle={serviceCardStyle}
+                    />
+                    <ServiceCard 
+                    serviceName={"Search Engine Optimization"}
+                    serviceDescription={"Boost your website's visibility and attract organic traffic with our expert SEO strategies and proven techniques."}
+                    serviceImage={"/images/SEO.png"}
+                    serviceId={"4"}
+                    serviceCardStyle={serviceCardStyle}
+                    />
+                    <ServiceCard 
+                    serviceName={"SAP Consultations and Implementations"}
+                    serviceDescription={"Unlock the full potential of SAP with our expert consultation and implementation services tailored to your business needs."}
+                    serviceImage={"/images/AI.png"}
+                    serviceId={"5"}
+                    serviceCardStyle={serviceCardStyle}
+                    />
+                    <ServiceCard 
+                    serviceName={"Wordpress Plugin"}
+                    serviceDescription={"Custom plugin development to extend functionality and enhance user experience for WordPress websites."}
+                    serviceImage={"/images/AI.png"}
+                    serviceId={"6"}
                     serviceCardStyle={serviceCardStyle}
                     />
                 </div>

@@ -22,6 +22,14 @@ function NavBar({links}) {
     fontWeight: 'bold'
   }
 
+  function onMouseEnter(e) {
+    e.target.style.color = 'white';
+  }
+
+  function onMouseLeave(e) {
+    e.target.style.color = '#7BC0E3';
+  }
+
   return (
     <Navbar expand="lg" style={navBar}>
       <Container fluid>
@@ -45,7 +53,11 @@ function NavBar({links}) {
                     {link.text}
                 </Nav.Link>
             ))}
-            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
+            <Nav.Link>
+              <span onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} style={{color: '#7BC0E3'}}>Login
+              </span><span style={{color: '#7BC0E3'}}>/</span>
+              <span onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} style={{color: '#7BC0E3'}}>SignUp</span></Nav.Link>
+            {/*<NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -55,7 +67,7 @@ function NavBar({links}) {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown>*/}
           </Nav>
         </Navbar.Collapse>
       </Container>
