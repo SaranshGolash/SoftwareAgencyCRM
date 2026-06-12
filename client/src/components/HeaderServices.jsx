@@ -53,6 +53,7 @@ function HeaderServices() {
         flexFlow: 'column nowrap',
         gap: '5px',
         width: '18rem',
+        backgroundColor: '#F5F5F0'
     }
 
     return (

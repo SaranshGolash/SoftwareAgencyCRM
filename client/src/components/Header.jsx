@@ -2,6 +2,7 @@ import NavBar from "./NavBar";
 import HeaderBody from "./HeaderBody";
 import HeaderServices from "./HeaderServices";
 import HeaderAboutWork from "./HeaderAboutWork";
+import HeaderYourIdea from "./HeaderYourIdea";
 
 function Header() {
     const links = [
@@ -25,6 +26,7 @@ function Header() {
             <HeaderBody />
             <HeaderServices />
             <HeaderAboutWork />
+            <HeaderYourIdea />
         </div>
         </>
     );
