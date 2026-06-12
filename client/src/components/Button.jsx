@@ -1,5 +1,3 @@
-import React from "react";
-
 function Button({textbtn, href, style}) {
     return(
         <button style={style} href={href}>{textbtn}</button>
