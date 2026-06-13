@@ -1,5 +1,3 @@
-import React from 'react';
-
 function HeaderYourIdea() {
     const sectionStyle = {
         padding: '100px 20px',

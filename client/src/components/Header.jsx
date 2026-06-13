@@ -4,6 +4,7 @@ import HeaderServices from "./HeaderServices";
 import HeaderAboutWork from "./HeaderAboutWork";
 import HeaderYourIdea from "./HeaderYourIdea";
 import HeaderInterestedWork from "./HeaderInterestedWork";
+import HeaderHappyWork from "./HeaderHappyWork";
 
 function Header() {
     const links = [
@@ -29,6 +30,7 @@ function Header() {
             <HeaderAboutWork />
             <HeaderYourIdea />
             <HeaderInterestedWork />
+            <HeaderHappyWork />
         </div>
         </>
     );

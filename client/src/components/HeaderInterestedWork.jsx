@@ -1,12 +1,10 @@
-import React from 'react';
-
 function HeaderInterestedWork() {
     const sectionStyle = {
         padding: '100px 20px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+        fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
     };
 
     const containerStyle = {
@@ -22,7 +20,7 @@ function HeaderInterestedWork() {
         alignItems: 'center',
         gap: '15px',
         position: 'relative',
-        overflow: 'hidden',
+        overflow: 'hidden'
     };
 
     const titleStyle = {
@@ -30,14 +28,14 @@ function HeaderInterestedWork() {
         fontSize: '46px',
         fontWeight: '800',
         margin: '0',
-        zIndex: 1,
+        zIndex: 1
     };
 
     const subtitleStyle = {
         color: '#AAB4D0', 
         fontSize: '20px',
         margin: '0 0 30px 0',
-        zIndex: 1,
+        zIndex: 1
     };
 
     const emailBtnStyle = {
@@ -51,7 +49,7 @@ function HeaderInterestedWork() {
         display: 'inline-block',
         transition: 'all 0.3s ease',
         boxShadow: '0 8px 25px rgba(212, 175, 55, 0.4)',
-        zIndex: 1,
+        zIndex: 1
     };
 
     // A subtle decorative background circle to make it look premium
@@ -63,7 +61,7 @@ function HeaderInterestedWork() {
         height: '300px',
         borderRadius: '50%',
         backgroundColor: 'rgba(212, 175, 55, 0.05)',
-        zIndex: 0,
+        zIndex: 0
     };
 
     return (
