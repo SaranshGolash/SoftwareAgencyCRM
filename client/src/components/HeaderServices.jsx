@@ -16,7 +16,21 @@ const btnStyle = {
 
 function ServiceCard({serviceName, serviceDescription, serviceImage, serviceId, serviceCardStyle}) {
   return (
-    <Card style={serviceCardStyle}>
+    <Card 
+        style={{ ...serviceCardStyle, transition: 'all 0.3s ease', cursor: 'pointer', border: '1px solid transparent' }}
+        onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateY(-10px)';
+            e.currentTarget.style.boxShadow = '0 15px 35px rgba(0, 0, 0, 0.1)';
+            e.currentTarget.style.borderColor = 'rgba(96, 225, 203, 0.5)';
+            e.currentTarget.style.backgroundColor = '#FFFFFF';
+        }}
+        onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow = 'none';
+            e.currentTarget.style.borderColor = 'transparent';
+            e.currentTarget.style.backgroundColor = serviceCardStyle.backgroundColor || '#F5F5F0';
+        }}
+    >
       <Card.Img variant="top" src={serviceImage} style={{width:"50px", height:"50px", paddingLeft: "15px", paddingTop: "10px"}} />
       <Card.Body>
         <Card.Title>{serviceName}</Card.Title>
