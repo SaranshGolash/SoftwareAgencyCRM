@@ -5,6 +5,7 @@ import HeaderAboutWork from "./HeaderAboutWork";
 import HeaderYourIdea from "./HeaderYourIdea";
 import HeaderInterestedWork from "./HeaderInterestedWork";
 import HeaderHappyWork from "./HeaderHappyWork";
+import HeaderBlogNews from "./HeaderBlogNews";
 
 function Header() {
     const links = [
@@ -31,6 +32,7 @@ function Header() {
             <HeaderYourIdea />
             <HeaderInterestedWork />
             <HeaderHappyWork />
+            <HeaderBlogNews />
         </div>
         </>
     );
