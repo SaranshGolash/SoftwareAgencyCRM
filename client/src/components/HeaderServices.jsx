@@ -41,26 +41,36 @@ function HeaderServices() {
     const headerBodyStyle = {
         color: '#FFFFFF',
         paddingTop: '10px',
+        paddingBottom: '10px',
         fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-        fontWeight: 'bold',
-        fontSize: '34px'
+        fontWeight: '800',
+        fontSize: '46px',
+        margin: 0
     };
 
     const serviceCardStyle = {
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'start',
-        flexFlow: 'column nowrap',
-        gap: '5px',
-        width: '18rem',
-        backgroundColor: '#F5F5F0'
+      display: 'flex',
+      justifyContent: 'flex-start',
+      alignItems: 'start',
+      flexFlow: 'column nowrap',
+      gap: '5px',
+      width: '18rem',
+      backgroundColor: '#F5F5F0'
     }
+
+    const descriptionStyle = {
+      color:'#FFFFFF',
+      fontSize: '18px',
+      lineHeight: '1.7',
+      color: 'grey',
+      fontWeight: '500'
+    };
 
     return (
         <div className="services-main" style={{margin: '20px'}}>
             <div className="services body" style={HeaderStyle}>
                 <h1 style={headerBodyStyle}>Our <span style={{color:"#60E1CB"}}>Services</span></h1>
-                <span style={{color:'#FFFFFF'}}>We provide the most affordable services</span>
+                <span style={descriptionStyle}>We provide the most affordable services</span>
                 <div className="services-card" style={{display: 'flex', justifyContent: 'center', flexFlow: 'row wrap', gap: '20px', marginTop:"60px", maxWidth: '950px'}}>
                     <ServiceCard 
                     serviceName={"Website Development"}

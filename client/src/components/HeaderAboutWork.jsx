@@ -41,12 +41,23 @@ function HeaderAboutWork() {
         gap: '25px'
     }
 
+    const subtitleStyle = {
+        color: '#7BC0E3',
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        letterSpacing: '2px',
+        fontSize: '14px',
+        marginBottom: '10px',
+        display: 'block'
+    }
+
     const titleStyle = {
         color: '#FFFFFF',
         paddingTop: '10px',
         fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-        fontWeight: 'bold',
-        fontSize: '34px'
+        fontWeight: '800',
+        fontSize: '46px',
+        margin: 0
     };
 
     const aboutWorkBtnStyle = {
@@ -134,7 +145,7 @@ function HeaderAboutWork() {
     return (
         <div className="aboutwork-main" style={aboutWorkStyle}>
             <div className="aboutwork-title" style={aboutWorkTitleStyle}>
-                <span style={{color: '#7BC0E3'}}>Portfolio</span>
+                <span style={subtitleStyle}>Portfolio</span>
                 <h3 style={titleStyle}>Our Great <span style={{color: '#60E1CB'}}>Work</span></h3>
                 <div className="aboutwork-btn" style={aboutWorkBtnStyle}>
                     <Button textbtn={'Website Development'} href={''} onClick={(e) => handleCategoryClick(e, webServiceImages)} style={btnStyle} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}/>

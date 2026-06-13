@@ -78,6 +78,7 @@ function HeaderHappyWork() {
     const titleStyle = {
         fontSize: '46px',
         fontWeight: '800',
+        fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
         color: '#FFFFFF',
         margin: 0
     };
